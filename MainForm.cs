@@ -38,6 +38,7 @@ namespace FileNameChecker
             {
                 MessageBox.Show("请选择路径");
             }else {
+                listView1.Items.Clear();
                 listView1.BeginUpdate();
                 string[] files = Directory.GetFiles(this.scanPath, "*.*",SearchOption.AllDirectories);
                 toolStripProgressBar1.Maximum = files.Length;

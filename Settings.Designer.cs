@@ -29,6 +29,7 @@ namespace FileNameChecker
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -38,25 +39,28 @@ namespace FileNameChecker
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(56, 51);
+            this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(65, 72);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 16);
+            this.label1.Size = new System.Drawing.Size(119, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "最大文件名长度";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(185, 49);
+            this.textBox1.Location = new System.Drawing.Point(216, 69);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.Size = new System.Drawing.Size(116, 23);
             this.textBox1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(59, 121);
+            this.button1.Location = new System.Drawing.Point(69, 171);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(88, 33);
             this.button1.TabIndex = 2;
             this.button1.Text = "确认";
             this.button1.UseVisualStyleBackColor = true;
@@ -64,9 +68,10 @@ namespace FileNameChecker
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(210, 121);
+            this.button2.Location = new System.Drawing.Point(245, 171);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(88, 33);
             this.button2.TabIndex = 3;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
@@ -74,13 +79,15 @@ namespace FileNameChecker
             // 
             // Settings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(339, 172);
+            this.ClientSize = new System.Drawing.Size(396, 244);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Settings";
             this.Text = "设置";
             this.Load += new System.EventHandler(this.Settings_Load);
